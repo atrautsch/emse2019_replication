@@ -41,7 +41,7 @@ The next steps expect the data in the repos folder.
 # create python virtualenv for asatlib and install dependencies
 cd asatlib
 python -m venv .
-source bin/actviate
+source bin/activate
 pip install -r requirements.txt
 ```
 
