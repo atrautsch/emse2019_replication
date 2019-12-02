@@ -24,7 +24,7 @@ This section provides information about how the raw data is extracted. As mentio
 
 ### 1.1. Import MongoDB Data into local MongoDB
 
-The MongoDB is provided as a ZIP file which can be extracted and dropped into a empty MongoDB installation. The data in the MongoDB is collected via [SmartSHARK](https://www.github.com/smartshark/). 
+The MongoDB is provided as a ZIP file which can be extracted and dropped into a empty MongoDB installation. The data in the MongoDB is collected via [SmartSHARK](https://www.github.com/smartshark/). The MongoDB version is 4.0.12. 
 It can be reproduced via executing the SmartSHARK plugins vcsSHARK, issueSHARK, mecoSHARK, linkSHARK, and labelSHARK on all repositories. Be aware that this collects a large amount of metrics and PMD warnings for every file in every commit. This is a VERY time expensive operation.
 
 
