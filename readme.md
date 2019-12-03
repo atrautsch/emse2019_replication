@@ -29,7 +29,7 @@ It can be reproduced via executing the SmartSHARK plugins vcsSHARK, issueSHARK, 
 
 
 ```bash
-wget http://www.user.informatik.uni-goettingen.de/~trautsch2/emse2019/mongodb.zip
+wget https://www.mediocre.hosting/mongodb.zip
 ```
 
 ### 1.2. Checkout Repositories
