@@ -2,7 +2,7 @@
 from bson.objectid import ObjectId
 
 from pycoshark.mongomodels import Commit, File, FileAction, Issue, Event, Hunk, CodeEntityState
-from pycoshark.util import java_filename_filter
+from pycoshark.utils import java_filename_filter
 from mongoengine.queryset.visitor import Q
 from functools import reduce
 
