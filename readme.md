@@ -12,7 +12,7 @@ In that case you have to fetch the pre-aggregated data beforehand and put it int
 ```bash
 cd ./data/
 wget http://www.user.informatik.uni-goettingen.de/~trautsch2/emse2019/aggregated2_full.zip
-unzip aggregated_full.zip
+unzip aggregated2_full.zip
 ```
 
 After that you can just run the Plots_Tables jupyter notebook with default settings (just create the virtualenv like described in 2, then open the jupyter notebook and proceed with 2.2).
