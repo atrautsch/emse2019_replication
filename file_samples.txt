@@ -1577,7 +1577,7 @@ archiva-modules/archiva-web/archiva-webdav/src/main/java/org/apache/maven/archiv
 src/com/ecyrd/jspwiki/action/MessageActionBean.java
 src/java/org/apache/commons/collections/iterators/ObjectArrayListIterator.java
 src/java/org/apache/jcs/utils/struct/DoubleLinkedListNode.java
-test-util/src/main/java/org/apache/falcon/cluster/util/EmbeddedCluster.java
+[TEST] ------ test-util/src/main/java/org/apache/falcon/cluster/util/EmbeddedCluster.java
 src/org/apache/wiki/WikiSession.java
 grill-driver-cube/src/main/java/com/inmobi/grill/driver/cube/CubeGrillDriver.java
 src/java/org/apache/commons/dbcp/PoolingConnection.java
@@ -2771,7 +2771,7 @@ archiva-modules/archiva-base/archiva-repository-layer/src/main/java/org/apache/m
 common/src/main/java/org/apache/falcon/entity/v0/EntityGraph.java
 helix-core/src/main/java/org/apache/helix/manager/zk/ZKHelixAdmin.java
 core/src/main/java/org/apache/mahout/math/hadoop/TimesSquaredJob.java
-itests/cayenne-runtime-itest/src/main/java/org/apache/cayenne/itest/di_stack/DefaultMap.java
+[TEST] ----- itests/cayenne-runtime-itest/src/main/java/org/apache/cayenne/itest/di_stack/DefaultMap.java
 agents-common/src/main/java/org/apache/ranger/plugin/util/RangerRequestedResources.java
 sshd-core/src/main/java/org/apache/sshd/common/subsystem/sftp/extensions/ParserUtils.java
 src/main/java/org/apache/commons/math3/linear/RealVector.java
@@ -2944,7 +2944,7 @@ src/main/java/org/apache/commons/validator/routines/checkdigit/CheckDigit.java
 nifi-nar-bundles/nifi-framework-bundle/nifi-framework/nifi-framework-cluster/src/main/java/org/apache/nifi/cluster/coordination/http/HttpResponseMapper.java
 src/java/org/apache/commons/collections/ResettableListIterator.java
 module-client/src/main/java/org/apache/http/impl/client/DefaultRequestDirector.java
-itests/itest-common/src/main/java/org/apache/cayenne/itest/ItestTableUtils.java
+[TEST] -----  itests/itest-common/src/main/java/org/apache/cayenne/itest/ItestTableUtils.java
 sandbox/src/main/java/org/apache/commons/vfs/provider/mime/MimeAttributesMap.java
 giraph-core/src/main/java/org/apache/giraph/vertex/ByteArrayVertex.java
 src/main/java/org/apache/giraph/comm/netty/NettyWorkerClient.java
