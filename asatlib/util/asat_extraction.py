@@ -2,6 +2,7 @@
 from bson.objectid import ObjectId
 
 from pycoshark.mongomodels import Commit, File, FileAction, Issue, Event, Hunk, CodeEntityState
+from pycoshark.utils import java_filename_filter
 from mongoengine.queryset.visitor import Q
 from functools import reduce
 
@@ -193,12 +194,20 @@ def warnings_coarse(revisions, vcs, poms=None):
 
                 effective_file_ids.append(ces.id)
 
-        # methods pro commit, aber nur java files
-        code_files = CodeEntityState.objects.filter(id__in=commit.code_entity_states, ce_type='file', long_name__endswith='.java', long_name__not__icontains='/test/').only('id')
-        code_file_ids = [ObjectId(cesf.id) for cesf in code_files]
+        # get all java files, check for test, documentation, generated or other exclusions
+        code_file_ids = []
+        test_file_ids = []
+        for ces in CodeEntityState.objects.filter(id__in=commit.code_entity_states, ce_type='file', long_name__endswith='.java').only('id', 'long_name'):
+            if java_filename_filter(ces.long_name, production_only=True):
+                code_file_ids.append(ces.id)
+            else:
+                test_file_ids.append(ces.id)
 
-        test_files = CodeEntityState.objects.filter(id__in=commit.code_entity_states, ce_type='file', long_name__endswith='.java', long_name__icontains='/test/').only('id')
-        test_file_ids = [ObjectId(cesf.id) for cesf in test_files]
+        # code_files = CodeEntityState.objects.filter(id__in=commit.code_entity_states, ce_type='file', long_name__endswith='.java', long_name__not__icontains='/test/').only('id', 'long_name')
+        # code_file_ids = [ObjectId(cesf.id) for cesf in code_files]
+
+        # test_files = CodeEntityState.objects.filter(id__in=commit.code_entity_states, ce_type='file', long_name__endswith='.java', long_name__icontains='/test/').only('id')
+        # test_file_ids = [ObjectId(cesf.id) for cesf in test_files]
 
         # detailed warnings, grouped by type of the warning
         code_warnings = get_warning_list(code_file_ids)
