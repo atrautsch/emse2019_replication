@@ -11,7 +11,7 @@ In that case you have to fetch the pre-aggregated data beforehand and put it int
 
 ```bash
 cd ./data/
-wget http://www.user.informatik.uni-goettingen.de/~trautsch2/emse2019/aggregated_full.zip
+wget http://www.user.informatik.uni-goettingen.de/~trautsch2/emse2019/aggregated2_full.zip
 unzip aggregated_full.zip
 ```
 
