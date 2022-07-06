@@ -1,5 +1,5 @@
 decorator==4.4.1
-lxml==4.4.2
+lxml==4.9.1
 mongoengine==0.18.2
 networkx==2.4
 numpy==1.17.4
